@@ -1,0 +1,90 @@
+html
+{
+  height: 100%;
+}
+
+#display
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+#clock
+{
+  font-size: 23px;
+  font-weight: 900;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+  height: 400px;
+  background-image: url('https://s15.postimg.cc/vdz7nd2dn/red-tomato-illustration-md.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.timeSetter
+{
+  font-size: 26px;
+  padding: 10px;
+  width: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#session > .setterLabel
+{
+  color: #991212;
+}
+
+#break > .setterLabel
+{
+  color: #256d13;
+}
+
+.timer
+{
+  display: flex;
+  flex-direction: row;
+}
+
+button
+{
+  background: none;
+  border: none;
+  color: #3a3937;
+}
+
+button:focus
+{
+  outline: none;
+}
+
+#timeSetters
+{
+  font-weight: 900;
+  width: 400px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+}
+
+#optionPanel > button
+{
+  color: #c9c291;
+}
+
+@media(max-width: 600px)
+{
+  #clock, #timeSetters{
+    width: 300px;
+  }
+}
